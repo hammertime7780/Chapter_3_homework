@@ -19,6 +19,55 @@ using namespace std;
 
 int main()
 {
+  	double number1 = 0.0;
+  	number1 = validateDouble(number1); //validate my double by function call, save that value into inputDouble
+    cout << "You entered valid double: " << number1 << endl;
+   
+   double number2 = 0.0;
+  	number2 = validateDouble(number2); //validate my double by function call, save that value into inputDouble
+    cout << "You entered valid double: " << number2 << endl;
+   int number3 = 0;
+	 number3 = validateInt(number3); //validate my integer by function call, save that value into input
+    cout << "You entered valid int: " << number3 << endl;
+    int number4 = 0;
+	 number4 = validateInt(number4); //validate my integer by function call, save that value into input
+    cout << "You entered valid int: " << number4 << endl;
+   double addition = 0.0;
+  
+   double subtraction = 0.0;
+  	
+   double multiplication = 0.0;
+  	
+   double division = 0.0;
+  	
+   int modulus = 0;
+	
+    
+  
+    
+  addition = number1 + number2;
+  cout << "The sum of the first two numbers is: "<< addition << endl;
+  subtraction = number1 - number2;
+  cout << "The difference of the first two numbers is: " << subtraction << endl;
+  multiplication = number1 * number2;
+  cout << "The product of the first two numbers is: " << multiplication << endl;
+  
+  if (number1 == 0|| number2 == 0)
+  {
+   
+    cout << "You can't divide by 0!!!" << endl;
+  }
+  else
+  {
+ division = number1 / number2;
+  cout << "The quotient of the first two numbers is: " << division << endl;
+  }
+  modulus = number3 % number4;
+  cout << "The remainder of the division of number 3 divided number 4 is: " << modulus << endl;
+
+    
+        
+ 
    //***********Validating int data type******************/
 	int input = 0;
 	input = validateInt(input); //validate my integer by function call, save that value into input
